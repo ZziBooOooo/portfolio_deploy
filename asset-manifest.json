@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/portfolio_deploy/static/css/main.8a5a80b8.css",
+    "main.js": "/portfolio_deploy/static/js/main.772e688e.js",
+    "static/media/butterfly.png": "/portfolio_deploy/static/media/butterfly.5f164551de1aebfa3161.png",
+    "static/media/exper2.gif": "/portfolio_deploy/static/media/exper2.4ec5d8fcb8ebc4f5af95.gif",
+    "static/media/design.gif": "/portfolio_deploy/static/media/design.c617bee540bb97cfd41d.gif",
+    "static/media/keyboard.png": "/portfolio_deploy/static/media/keyboard.09e68d22cb1368270df6.png",
+    "static/media/tree.png": "/portfolio_deploy/static/media/tree.a425025e4d981c4d5f0b.png",
+    "static/media/passion.gif": "/portfolio_deploy/static/media/passion.723bba8cbde10f6243e7.gif",
+    "static/media/exper.gif": "/portfolio_deploy/static/media/exper.d379e22b7a695c84717a.gif",
+    "static/media/0.png": "/portfolio_deploy/static/media/0.19b321c8a62b6c3eab10.png",
+    "static/media/3.png": "/portfolio_deploy/static/media/3.37a20944d0abaaf40ac6.png",
+    "static/media/1.png": "/portfolio_deploy/static/media/1.3a2cd820779556ed4d63.png",
+    "static/media/kaushan-script-all-400-normal.woff": "/portfolio_deploy/static/media/kaushan-script-all-400-normal.ba623d1ca520a2a711d2.woff",
+    "static/media/sirin-stencil-all-400-normal.woff": "/portfolio_deploy/static/media/sirin-stencil-all-400-normal.e1b8add18154b5d65682.woff",
+    "static/media/kaushan-script-latin-400-normal.woff2": "/portfolio_deploy/static/media/kaushan-script-latin-400-normal.2855d49bba6b2cb7bec5.woff2",
+    "static/media/flower.png": "/portfolio_deploy/static/media/flower.da9f572e675946ef0204.png",
+    "static/media/sirin-stencil-latin-400-normal.woff2": "/portfolio_deploy/static/media/sirin-stencil-latin-400-normal.f668f96beabdc683277b.woff2",
+    "static/media/flower2.png": "/portfolio_deploy/static/media/flower2.ad4631ec1ae00ca4336e.png",
+    "static/media/kaushan-script-latin-ext-400-normal.woff2": "/portfolio_deploy/static/media/kaushan-script-latin-ext-400-normal.5a05e21384fe4b1b9db7.woff2",
+    "static/media/cat.png": "/portfolio_deploy/static/media/cat.1e0bc418c784aaa14320.png",
+    "static/media/bear.png": "/portfolio_deploy/static/media/bear.eeb29492837d97737689.png",
+    "static/media/2.png": "/portfolio_deploy/static/media/2.905281f9a19e728d2501.png",
+    "static/media/cloud.png": "/portfolio_deploy/static/media/cloud.21587a11a806182abe59.png",
+    "index.html": "/portfolio_deploy/index.html",
+    "main.8a5a80b8.css.map": "/portfolio_deploy/static/css/main.8a5a80b8.css.map",
+    "main.772e688e.js.map": "/portfolio_deploy/static/js/main.772e688e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a5a80b8.css",
+    "static/js/main.772e688e.js"
+  ]
+}
