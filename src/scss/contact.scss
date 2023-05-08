@@ -1,0 +1,79 @@
+@import "./variable.scss";
+.contact_FullBox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+  padding-bottom: 200px;
+  margin-top: 300px;
+
+  .contact_ContentBox {
+    width: 100%;
+    max-width: 1600px;
+    overflow: hidden;
+    position: relative;
+
+    .contact_TextBox {
+      height: 75vh;
+      //   background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 8rem;
+
+      .magicText0 {
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(60px);
+      }
+    }
+
+    .contact_linkBox {
+      position: absolute;
+      right: 3%;
+      bottom: 3%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transform: translateY(100%);
+      opacity: 0;
+      p {
+        font-size: 2.5rem;
+      }
+
+      div {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        margin-left: 10px;
+
+        img {
+          width: 100%;
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .contact_FullBox {
+    .contact_ContentBox {
+      .contact_TextBox {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+@include mobile {
+  .contact_FullBox {
+    .contact_ContentBox {
+      .contact_TextBox {
+        font-size: 3rem;
+      }
+    }
+  }
+}

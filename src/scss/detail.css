@@ -1,0 +1,484 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+.detail_fullBox {
+  width: 100%;
+  height: 100vh;
+  color: rgb(36, 35, 35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: "Inter", "Noto Sans KR";
+  overflow: hidden;
+}
+.detail_fullBox .detail_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1600px;
+  height: 70vh;
+  margin-top: 10vh;
+  position: relative;
+}
+.detail_fullBox .detail_imgWrap {
+  width: 30%;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.detail_fullBox .detail_imgWrap img {
+  width: 100%;
+  max-height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 3px 4px 8px rgba(46, 46, 46, 0.301);
+}
+.detail_fullBox .detail_prjLink {
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 5000;
+}
+.detail_fullBox .detail_githubLink {
+  position: absolute;
+  font-family: "Noto Sans KR";
+  bottom: -8%;
+  left: 0;
+  font-size: 1rem;
+  color: rgb(160, 158, 156);
+  transition: 0.4s;
+  font-weight: 600;
+  opacity: 1 !important;
+}
+.detail_fullBox .detail_githubLink:hover {
+  color: #3b3939;
+  transform: translateY(-3px);
+}
+.detail_fullBox .detail_contentBox {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.detail_fullBox .detail_contentBox .detail_title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  min-width: 200px;
+  margin-right: 40px;
+}
+.detail_fullBox .detail_contentBox .text1 {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.detail_fullBox .detail_contentBox .datail_titleBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.detail_fullBox .detail_contentBox .datail_toolBox {
+  display: flex;
+  align-items: center;
+}
+.detail_fullBox .detail_contentBox .detail_desBox {
+  display: flex;
+  align-items: center;
+}
+.detail_fullBox .detail_contentBox .detail_otherBox {
+  display: flex;
+  align-items: center;
+}
+.detail_fullBox .detail_contentBox .detail_otherBox .datail_sentenceBox {
+  margin-bottom: 5px;
+}
+.detail_fullBox .arrowBox {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.detail_fullBox .arrowBox img {
+  width: 100%;
+}
+.detail_fullBox .arrowBox:hover {
+  opacity: 0.8;
+  transform: translateY(-50%) scale(1.05);
+}
+.detail_fullBox .project_menuBox {
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 1px solid rgb(191, 191, 191);
+  background-color: white;
+  z-index: 900;
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail_fullBox .project_menuBox button {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.detail_fullBox .project_menuBox button img {
+  width: 100%;
+}
+.detail_fullBox .project_menuBox .smallMenuBox {
+  margin-bottom: 150px;
+}
+.detail_fullBox .project_menuBox .smallMenuBox > p:nth-of-type(1) {
+  margin-bottom: 5vh;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.detail_fullBox .project_menuBox .smallMenuBox p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.detail_fullBox .ani2 {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.hoverCursorBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.hoverCursorBox img {
+  width: 60%;
+  filter: invert(1);
+}
+
+.header_FullBox2 {
+  width: 100vw;
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  z-index: 850;
+  border-bottom: 1px solid rgba(83, 83, 83, 0.322);
+  font-family: "Inter";
+  transform: translateY(-100%);
+}
+
+.header_FullBox2 .header_Box {
+  width: 90%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_FullBox2 .header_Box .header_Logo2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header_FullBox2 .header_Box .header_MenuBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.header_FullBox2 .header_Box .header_MenuBox p {
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.detail_FULLBox {
+  overflow: hidden;
+}
+
+.cover-4,
+.cover-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(25, 26, 27);
+  z-index: 1000;
+}
+
+.cover-5 {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.cover,
+.cover-2,
+.cover-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+}
+
+.cover-2 {
+  background-color: rgb(129, 129, 129);
+}
+
+.cover-3 {
+  background-color: rgb(29, 29, 29);
+}
+
+.coverMenu {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(28, 31, 31);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  transform: translateY(-100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.coverMenu .cover_Content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+.coverMenu .cover_Content .cover_menuBox {
+  width: 50%;
+  min-width: 610px;
+  text-align: left;
+}
+.coverMenu .cover_Content .cover_menuBox p,
+.coverMenu .cover_Content .cover_menuBox a {
+  margin-left: 2%;
+  font-size: 7rem;
+  font-family: "Ageo Bold";
+}
+.coverMenu .cover_Content .cover_menuBox p:hover,
+.coverMenu .cover_Content .cover_menuBox a:hover {
+  color: rgb(240, 101, 166);
+}
+.coverMenu .cover_Content .cover_menuBox p:nth-child(2):hover,
+.coverMenu .cover_Content .cover_menuBox a:nth-child(2):hover {
+  color: #ffbb3b;
+}
+.coverMenu .cover_Content .cover_menuBox p:nth-child(3):hover,
+.coverMenu .cover_Content .cover_menuBox a:nth-child(3):hover {
+  color: #4dafff;
+}
+.coverMenu .cover_Content .cover_menuBox .nav_locations {
+  display: flex;
+  margin-left: 5px;
+}
+.coverMenu .cover_Content .cover_menuBox .nav_locations p,
+.coverMenu .cover_Content .cover_menuBox .nav_locations a {
+  font-family: "Inter";
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #e4e4e4;
+  margin-right: 8px;
+  margin-top: 10px;
+  position: relative;
+  transition: 0.4s;
+}
+.coverMenu .cover_Content .cover_menuBox .nav_locations p:before {
+  position: absolute;
+  bottom: -10%;
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(204, 204, 204);
+  transform-origin: left;
+  transition: 0.3s;
+}
+.coverMenu .cover_Content .cover_menuBox .nav_locations p:hover {
+  transform: translateY(-3px);
+}
+.coverMenu .cover_Content .cover_menuBox .nav_locations p:hover:before {
+  width: 90%;
+}
+.coverMenu .cover_Content .cover_wiseBox {
+  font-family: "Inter";
+  width: 40%;
+  text-align: left;
+}
+.coverMenu .cover_Content .cover_wiseBox div:first-child {
+  margin-bottom: 20px;
+}
+.coverMenu .cover_Content .cover_wiseBox div:first-child p:first-child {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 1.05;
+}
+.coverMenu .cover_Content .cover_wiseBox div:nth-child(2) p {
+  font-family: "Noto Sans KR";
+}
+.coverMenu button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+}
+.coverMenu button img {
+  width: 100%;
+  filter: invert(1);
+}
+
+@font-face {
+  font-family: "Ageo Bold";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2479807/ageo-heavy.woff2") format("woff2");
+}
+.hamburger2 {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 600;
+  position: relative;
+}
+.hamburger2 span {
+  display: inline-block;
+  height: 2px;
+  width: 30px;
+  background-color: #000;
+  margin-bottom: 7px;
+  transition: 0.3s ease transform;
+}
+.hamburger2__open span:nth-child(1) {
+  transform: rotate(-45deg) translate(-11px, 9px);
+  background-color: white;
+}
+.hamburger2__open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger2__open span:nth-child(3) {
+  transform: rotate(45deg) translate(-8px, -6px);
+  background-color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 15px;
+  }
+  .detail_fullBox .detail_contentBox .detail_title {
+    margin-right: 10px;
+  }
+  .detail_fullBox .detail_box {
+    width: 95%;
+  }
+  .detail_fullBox .detail_imgWrap {
+    width: 35%;
+  }
+  .coverMenu .cover_Content .cover_menuBox {
+    width: 40%;
+    min-width: 500px;
+  }
+  .coverMenu .cover_Content .cover_menuBox a,
+  .coverMenu .cover_Content .cover_menuBox p {
+    font-size: 5.8rem;
+  }
+  .coverMenu .cover_Content .cover_wiseBox {
+    width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+  .detail_fullBox {
+    height: 100vh;
+  }
+  .detail_fullBox .detail_contentBox {
+    width: 90%;
+    height: 70%;
+  }
+  .detail_fullBox .detail_contentBox .detail_title {
+    margin-right: 10px;
+    min-width: 150px;
+    font-size: 1.4rem;
+  }
+  .detail_fullBox .detail_box {
+    width: 95%;
+    flex-direction: column;
+    margin-top: 10vh;
+    height: 90vh;
+    justify-content: space-evenly;
+  }
+  .detail_fullBox .detail_imgWrap {
+    width: 42%;
+    min-width: 170px;
+    margin-bottom: 15px;
+  }
+  .coverMenu .cover_Content {
+    flex-direction: column;
+    margin-top: 0;
+    height: 75vh;
+  }
+  .coverMenu .cover_Content .cover_menuBox {
+    width: 90%;
+    min-width: 310px;
+    margin-bottom: 20px;
+  }
+  .coverMenu .cover_Content .cover_menuBox a,
+  .coverMenu .cover_Content .cover_menuBox p {
+    font-size: 4rem;
+    margin-left: 0;
+  }
+  .coverMenu .cover_Content .cover_wiseBox {
+    width: 95%;
+  }
+  .coverMenu .cover_Content .cover_wiseBox div:first-child p:first-child {
+    font-size: 2.2rem;
+  }
+  .coverMenu button {
+    width: 20px;
+    height: 20px;
+  }
+}/*# sourceMappingURL=detail.css.map */

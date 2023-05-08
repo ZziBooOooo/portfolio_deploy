@@ -1,0 +1,500 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+@font-face {
+  font-family: "Monument";
+  src: url("https://res.cloudinary.com/holatresveces/raw/upload/v1573001944/MonumentExtended-Ultrabold_clzvv7.otf");
+}
+.about_FullBox {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 300px 0 200px 0;
+  position: relative;
+}
+.about_FullBox .about_nameFullBox {
+  font-family: "Inter";
+  font-size: 32rem;
+  line-height: 0.95;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+.about_FullBox .menu {
+  color: transparent;
+  -webkit-text-stroke: 3px rgb(34, 34, 33);
+  width: 100%;
+}
+.about_FullBox .menu li {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.about_FullBox .menu li:nth-of-type(2) {
+  transform: translateX(-100%);
+}
+.about_FullBox .container {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  outline: 3px transparent;
+  color: rgb(34, 34, 33);
+}
+.about_FullBox ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  white-space: nowrap;
+  width: 100%;
+}
+.about_FullBox ul li {
+  text-align: left;
+  font-weight: 800;
+  margin-left: 1%;
+}
+.about_FullBox ul li:nth-of-type(2) {
+  text-align: right !important;
+  font-weight: 600;
+  font-size: 25rem;
+  margin-right: 1%;
+}
+.about_FullBox .about_scrollTextBox {
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+  transform: translateY(50%);
+  pointer-events: none;
+}
+.about_FullBox .about_scrollTextBox p {
+  font-size: 10rem;
+  color: rgb(109, 109, 109);
+}
+.about_FullBox .about_scrollTextBox2 {
+  pointer-events: none;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  transform: translateX(100%);
+}
+.about_FullBox .about_scrollTextBox2 p {
+  font-size: 10rem;
+  color: rgb(67, 67, 68);
+}
+
+.Introduce_FullBox {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Introduce_FullBox .Introduce_ContentBox {
+  width: 90%;
+  min-height: 100vh;
+  max-width: 1600px;
+  font-family: "Inter";
+  margin-top: 50px;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_textBox {
+  width: 90%;
+  height: 50vh;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans KR";
+  text-align: left;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_leftTextBox {
+  width: 50%;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_leftTextBox > p {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_leftTextBox div {
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox {
+  width: 50%;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox > p {
+  font-size: 5rem;
+  font-style: italic;
+  font-family: "Open Sans";
+  font-weight: 600;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox div {
+  overflow: hidden;
+  min-width: 550px;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_textBox p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.Introduce_FullBox .Introduce_ContentBox .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  position: relative;
+}
+.Introduce_FullBox .Introduce_ContentBox .container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-origin: left;
+}
+.Introduce_FullBox .Introduce_ContentBox .container .reveal {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  height: 50%;
+  max-width: 800px;
+  max-height: 500px;
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .I_Section_Title {
+  font-size: 8rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  color: #2b2929;
+}
+.Introduce_FullBox .Introduce_ContentBox .I_Section_textBox {
+  margin-left: 30px;
+}
+.Introduce_FullBox .Introduce_ContentBox .I_Section_textBox p {
+  font-family: "Noto Sans KR";
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #c0c0c0;
+}
+.Introduce_FullBox .Introduce_ContentBox .content1 {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_Section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 300px;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_Section .I_Section_Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_Section .I_Section_Content .I_Section_Title {
+  font-size: 3rem;
+}
+.Introduce_FullBox .Introduce_ContentBox .Introduce_Section .I_Section_Content .I_Section_textBox {
+  margin: 0;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 {
+  justify-content: flex-end;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 .section2_imgWrap {
+  width: 70%;
+  order: 3;
+  display: flex;
+  position: relative;
+  min-height: 600px;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  order: 2;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 .container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-origin: left;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 .container .reveal2 {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 .container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  order: 2;
+  bottom: 10%;
+  left: 10%;
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 .container2 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-origin: left;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 .container2 .reveal22 {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  max-width: 500px;
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section2 .content2 {
+  order: 2;
+  margin-left: 0;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.Introduce_FullBox .Introduce_ContentBox .Section3 {
+  justify-content: center;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section3 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  min-height: 800px;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section3 .container .reveal3 {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 550px;
+  min-height: 700px;
+  overflow: hidden;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section3 .container .reveal3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-origin: left;
+}
+.Introduce_FullBox .Introduce_ContentBox .Section3 .content3 {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@media (min-width: 1550px) and (max-width: 1750px) {
+  .about_FullBox .about_nameFullBox {
+    font-size: 28rem;
+  }
+  .about_FullBox ul li:nth-of-type(2) {
+    font-size: 22.5rem;
+  }
+}
+@media (min-width: 1350px) and (max-width: 1549px) {
+  .about_FullBox .about_nameFullBox {
+    font-size: 24rem;
+  }
+  .about_FullBox ul li:nth-of-type(2) {
+    font-size: 19.5rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1349px) {
+  .about_FullBox .about_nameFullBox {
+    font-size: 19rem;
+  }
+  .about_FullBox ul li:nth-of-type(2) {
+    font-size: 14.5rem;
+  }
+  .about_FullBox .about_scrollTextBox p,
+  .about_FullBox .about_scrollTextBox2 p {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about_FullBox {
+    margin-top: 100px;
+  }
+  .about_FullBox .about_nameFullBox {
+    font-size: 14rem;
+    height: 60vh;
+  }
+  .about_FullBox ul li:nth-of-type(2) {
+    font-size: 10.5rem;
+  }
+  .about_FullBox .about_scrollTextBox {
+    transform: translateY(0%);
+  }
+  .about_FullBox .about_scrollTextBox p,
+  .about_FullBox .about_scrollTextBox2 p {
+    font-size: 6rem;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox {
+    width: 40%;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox {
+    width: 60%;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox div {
+    min-width: 500px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_Section {
+    align-items: center;
+    margin-bottom: 250px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_Section:last-child {
+    margin-bottom: 0;
+    align-items: flex-start !important;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section2 {
+    align-items: center !important;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section3 .container {
+    min-height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .about_FullBox {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .about_FullBox .about_scrollBoxWap {
+    overflow: visible;
+    display: block;
+  }
+  .about_FullBox .about_scrollBoxWap .about_scrollBox div {
+    align-items: center;
+  }
+  .about_FullBox .about_scrollBoxWap .about_scrollBox div p:nth-of-type(1) {
+    font-size: 7rem;
+    width: 400px;
+    font-weight: 600;
+  }
+  .about_FullBox .about_nameFullBox {
+    font-size: 10rem;
+    height: 30vh;
+  }
+  .about_FullBox ul li:nth-of-type(2) {
+    font-size: 5.5rem;
+    font-weight: 800;
+  }
+  .about_FullBox .about_scrollTextBox {
+    transform: translateY(0%);
+  }
+  .about_FullBox .about_scrollTextBox p,
+  .about_FullBox .about_scrollTextBox2 p {
+    font-size: 4rem;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox {
+    flex-direction: column;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_leftTextBox {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_leftTextBox > p {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox {
+    width: 100%;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox > p {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_textBox .Introduce_rightTextBox div {
+    min-width: 300px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_Section {
+    align-items: flex-start;
+    margin-bottom: 150px;
+    flex-direction: column;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Introduce_Section:last-child {
+    margin-bottom: 0;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .container .reveal {
+    width: 90%;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section2 {
+    align-items: center !important;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section2 .section2_imgWrap {
+    min-height: 400px;
+    order: 1;
+    width: 100%;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section2 .container {
+    width: 80%;
+    height: 50%;
+    right: 10%;
+    min-height: 250px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section2 .container2 {
+    height: 20%;
+    bottom: 20%;
+    left: 0;
+    min-height: 120px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section2 .content2 {
+    width: 90%;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section3 {
+    align-items: center;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section3 .container {
+    min-height: 400px;
+    width: 90%;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section3 .container .reveal3 {
+    min-height: 200px;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section3 .container .reveal3 img {
+    height: 50%;
+  }
+  .Introduce_FullBox .Introduce_ContentBox .Section3 .content3 {
+    width: 90%;
+  }
+}/*# sourceMappingURL=about.css.map */

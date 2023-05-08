@@ -1,0 +1,529 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+#home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_FullBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1600px;
+  height: 100vh;
+  justify-content: center;
+}
+.main_FullBox .main_MainFullBox {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+.main_FullBox .main_MainFullBox .main_TextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  color: #302f2f;
+}
+.main_FullBox .main_MainFullBox .main_TextBox span {
+  margin: 0;
+  font-size: 13rem;
+  display: inline-block;
+  transform: translateY(100%);
+  letter-spacing: -15px;
+  font-weight: 600;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox {
+  overflow: hidden;
+  line-height: 0.98;
+  display: flex;
+  align-items: center;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox span:nth-of-type(2) {
+  font-family: "Inter", sans-serif;
+  margin-left: 40px;
+  font-size: 13rem;
+  display: inline-block;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div {
+  width: 340px;
+  height: 160px;
+  margin-left: 60px;
+  border-radius: 300px;
+  overflow: hidden;
+  transform: translateY(120%);
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateY(0%);
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  line-height: 0.95;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div {
+  width: 340px;
+  min-width: 340px;
+  height: 160px;
+  margin-left: 40px;
+  border-radius: 300px;
+  overflow: hidden;
+  transform: translateY(120%);
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 span {
+  margin-left: 60px;
+  display: inline-block;
+  transform: translateY(100%);
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .scrollContainer {
+  transform: translateX(50%) rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 1.8rem;
+  position: absolute;
+  right: 0%;
+  font-weight: 500;
+  opacity: 0;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .scrollContainer:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 2px;
+  margin-left: 10px;
+  background-color: rgb(71, 71, 71);
+  animation: 1.5s lineScroll infinite;
+  transform-origin: left;
+}
+@keyframes lineScroll {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(100%);
+    opacity: 1;
+  }
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_thirdTextBox {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  line-height: 0.95;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_thirdTextBox span {
+  display: block;
+  transform: translateY(100%);
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_thirdTextBox .main_ContactBox {
+  width: 180px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.main_FullBox .main_MainFullBox .main_TextBox .main_thirdTextBox .main_ContactBox p {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: rgb(179, 178, 177);
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0px;
+}
+.main_FullBox .main_MainFullBox .main_otherBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutFullBox {
+  margin-top: 200px;
+  display: flex;
+  justify-content: flex-start;
+}
+.aboutFullBox .about_scrollBoxWap {
+  width: 120vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.aboutFullBox .about_scrollBoxWap .about_scrollBox {
+  display: flex;
+}
+.aboutFullBox .about_scrollBoxWap .about_scrollBox div {
+  display: flex;
+  margin: 0 15px;
+  width: 800px;
+}
+.aboutFullBox .about_scrollBoxWap .about_scrollBox div p {
+  font-family: "Inter", sans-serif;
+  font-size: 11rem;
+  letter-spacing: 3px;
+  color: rgb(53, 52, 50);
+}
+.aboutFullBox .about_scrollBoxWap .about_scrollBox div span {
+  display: inline-block;
+  font-style: italic;
+  transform: translateX(-10%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+}
+
+h2 {
+  font-size: 3.157em;
+}
+
+h3 {
+  font-size: 2.369em;
+}
+
+h4 {
+  font-size: 1.777em;
+}
+
+h5 {
+  font-size: 1.333em;
+}
+
+small {
+  font-size: 0.75em;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.intro {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+  z-index: 1000;
+  font-size: 3rem;
+}
+.intro__title {
+  font-family: "Noto Sans KR";
+  color: rgb(245, 245, 245);
+  font-weight: 600;
+  max-width: 45%;
+  text-align: center;
+  mix-blend-mode: difference;
+  z-index: 2;
+  transform: translateY(40px);
+}
+.intro__background {
+  position: absolute;
+  top: 0;
+  background-color: rgb(252, 252, 252);
+  width: 50%;
+  height: 100%;
+  transform: scaleX(0);
+}
+.intro__background--left {
+  left: 0;
+  transform-origin: left center;
+}
+.intro__background--right {
+  left: 50%;
+  transform-origin: right center;
+}
+
+@media (min-width: 1550px) and (max-width: 1700px) {
+  .main_FullBox .main_MainFullBox .main_TextBox span {
+    font-size: 11.5rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div {
+    width: 330px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 span {
+    margin-left: 20px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div {
+    width: 330px;
+  }
+}
+@media (min-width: 1350px) and (max-width: 1549px) {
+  .main_FullBox .main_MainFullBox .main_TextBox span {
+    font-size: 9.5rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox {
+    line-height: 1;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div {
+    width: 280px;
+    height: 140px;
+    min-width: 280px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox span:nth-of-type(2) {
+    font-size: 10rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox {
+    line-height: 1;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 span {
+    margin-left: 30px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div {
+    width: 280px;
+    height: 140px;
+    min-width: 280px;
+  }
+}
+@media (min-width: 1224px) and (max-width: 1349px) {
+  .main_FullBox .main_MainFullBox .main_TextBox span {
+    font-size: 8.5rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox {
+    line-height: 1;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div {
+    width: 250px;
+    height: 140px;
+    min-width: 250px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox span:nth-of-type(2) {
+    font-size: 9rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox {
+    line-height: 1;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 span {
+    margin-left: 30px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div {
+    width: 250px;
+    height: 140px;
+    min-width: 250px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1223px) {
+  .main_FullBox .main_MainFullBox .main_TextBox span {
+    font-size: 7.5rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox {
+    line-height: 1;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div {
+    width: 230px;
+    height: 100px;
+    min-width: 230px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox span:nth-of-type(2) {
+    font-size: 8rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox {
+    line-height: 1;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 span {
+    margin-left: 20px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div {
+    width: 230px;
+    height: 100px;
+    min-width: 230px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main_FullBox .main_MainFullBox .main_TextBox {
+    position: relative;
+    height: 60vh;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox span {
+    font-size: 8.8rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox {
+    mix-blend-mode: difference;
+    line-height: 1;
+    min-width: 600px;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div {
+    width: 340px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 0;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div img {
+    width: 90%;
+    opacity: 0.7;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox span:nth-of-type(1) {
+    mix-blend-mode: difference;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox span:nth-of-type(2) {
+    font-size: 8rem;
+    margin-left: 20px;
+    mix-blend-mode: difference;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox {
+    line-height: 1;
+    margin-bottom: 5%;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 span {
+    margin-left: 0px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div {
+    width: 320px;
+    height: 250px;
+    min-width: 230px;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div img {
+    opacity: 0.7;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_thirdTextBox {
+    height: auto;
+    margin-bottom: 5%;
+    mix-blend-mode: difference;
+    line-height: 1;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_thirdTextBox .main_ContactBox {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .intro {
+    font-size: 2rem;
+  }
+  .main_FullBox .main_MainFullBox {
+    position: relative;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox {
+    height: 60vh;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox span {
+    letter-spacing: -8px;
+    font-size: 4.8rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox {
+    mix-blend-mode: difference;
+    line-height: 1;
+    min-width: 600px;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div {
+    width: 230px;
+    height: 130px;
+    position: absolute;
+    top: 8%;
+    z-index: -1;
+    right: 0;
+    margin-left: 0;
+    display: none;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox div img {
+    width: 90%;
+    opacity: 0.7;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox span:nth-of-type(1) {
+    mix-blend-mode: difference;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_firstTextBox span:nth-of-type(2) {
+    font-size: 4.8rem;
+    margin-left: 20px;
+    mix-blend-mode: difference;
+    display: none;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox {
+    line-height: 1;
+    margin-bottom: 5%;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 {
+    width: 100%;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 span {
+    margin-left: 0px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div {
+    width: 250px;
+    height: 250px;
+    min-width: 200px;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    margin-left: 0;
+    opacity: 0;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .secondTextBox1 div img {
+    opacity: 0.7;
+    height: 85%;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .scrollContainer {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    margin-right: 0;
+    font-size: 1.2rem;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_secondTextBox .scrollContainer:after {
+    width: 20px;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_thirdTextBox {
+    height: auto;
+    margin-bottom: 5%;
+    mix-blend-mode: difference;
+    line-height: 1;
+  }
+  .main_FullBox .main_MainFullBox .main_TextBox .main_thirdTextBox .main_ContactBox {
+    position: absolute;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

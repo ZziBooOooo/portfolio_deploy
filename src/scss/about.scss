@@ -1,0 +1,572 @@
+@import "./variable.scss";
+@font-face {
+  font-family: "Monument";
+  src: url("https://res.cloudinary.com/holatresveces/raw/upload/v1573001944/MonumentExtended-Ultrabold_clzvv7.otf");
+}
+.about_FullBox {
+  width: 100%;
+  min-height: 100vh;
+  //   background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 300px 0 200px 0;
+  position: relative;
+
+  .about_nameFullBox {
+    font-family: "Inter";
+    font-size: 32rem;
+    line-height: 0.95;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+    // background-color: antiquewhite;
+  }
+  .menu {
+    color: transparent;
+    -webkit-text-stroke: 3px rgb(34, 34, 33);
+    // background-color: red;
+    width: 100%;
+
+    li {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    & li:nth-of-type(2) {
+      transform: translateX(-100%);
+    }
+  }
+
+  .container {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    outline: 3px transparent;
+    color: rgb(34, 34, 33);
+    // backrgb(40, 41, 40)or: white;
+  }
+
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    white-space: nowrap;
+    width: 100%;
+    li {
+      text-align: left;
+      font-weight: 800;
+      margin-left: 1%;
+    }
+
+    & li:nth-of-type(2) {
+      text-align: right !important;
+      font-weight: 600;
+      font-size: 25rem;
+      margin-right: 1%;
+    }
+  }
+
+  .about_scrollTextBox {
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+    transform: translateY(50%);
+    pointer-events: none;
+    p {
+      font-size: 10rem;
+      color: rgb(109, 109, 109);
+    }
+  }
+  .about_scrollTextBox2 {
+    pointer-events: none;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    transform: translateX(100%);
+
+    p {
+      font-size: 10rem;
+      color: rgb(67, 67, 68);
+    }
+  }
+}
+
+.Introduce_FullBox {
+  width: 100%;
+  min-height: 100vh;
+  //   background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Introduce_ContentBox {
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1600px;
+    // background-color: rgba(15, 15, 15, 0.219);
+    font-family: "Inter";
+    margin-top: 50px;
+
+    .Introduce_textBox {
+      width: 90%;
+      height: 50vh;
+      margin: 0 auto;
+      color: white;
+      margin-bottom: 200px;
+      display: flex;
+      justify-content: center;
+      font-family: "Noto Sans KR";
+      text-align: left;
+      .Introduce_leftTextBox {
+        width: 50%;
+        opacity: 0;
+        transform: translateY(50px);
+        & > p {
+          font-size: 5rem;
+          font-weight: 600;
+          margin-bottom: 80px;
+          overflow: hidden;
+        }
+        div {
+          overflow: hidden;
+        }
+      }
+      .Introduce_rightTextBox {
+        width: 50%;
+        opacity: 0;
+        transform: translateY(50px);
+        & > p {
+          font-size: 5rem;
+          font-style: italic;
+          font-family: "Open Sans";
+          font-weight: 600;
+          margin-bottom: 80px;
+          overflow: hidden;
+        }
+        div {
+          overflow: hidden;
+          min-width: 550px;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // height: 100vh;
+      width: 60%;
+      position: relative;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform-origin: left;
+      }
+
+      .reveal {
+        visibility: hidden;
+        position: relative;
+        width: 80%;
+        height: 50%;
+        max-width: 800px;
+        max-height: 500px;
+        overflow: hidden;
+      }
+    }
+
+    .I_Section_Title {
+      font-size: 8rem;
+      // background-color: #f7f7f76b;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: -2px;
+      margin-bottom: 30px;
+      color: #2b2929;
+    }
+    .I_Section_textBox {
+      margin-left: 30px;
+      p {
+        font-family: "Noto Sans KR";
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #c0c0c0;
+      }
+    }
+
+    .content1 {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .Introduce_Section {
+      width: 100%;
+      //   height: 50vh;
+      display: flex;
+      align-items: center;
+      margin-bottom: 300px;
+
+      .I_Section_Content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 5%;
+        .I_Section_Title {
+          font-size: 3rem;
+        }
+        .I_Section_textBox {
+          margin: 0;
+        }
+      }
+    }
+
+    .Section2 {
+      justify-content: flex-end;
+      // background-color: #888787;
+      .section2_imgWrap {
+        width: 70%;
+        order: 3;
+        display: flex;
+        // background-color: antiquewhite;
+        position: relative;
+        min-height: 600px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // height: 100vh;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        order: 2;
+        top: 50%;
+        right: 0%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        // background-color: palegoldenrod;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transform-origin: left;
+        }
+
+        .reveal2 {
+          visibility: hidden;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          max-width: 700px;
+          overflow: hidden;
+        }
+      }
+      .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // height: 100vh;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        order: 2;
+        bottom: 10%;
+        left: 10%;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transform-origin: left;
+        }
+
+        .reveal22 {
+          visibility: hidden;
+          position: relative;
+          width: 80%;
+          height: 100%;
+          max-width: 500px;
+          overflow: hidden;
+        }
+      }
+
+      .content2 {
+        order: 2;
+        margin-left: 0;
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+    }
+
+    .Section3 {
+      justify-content: center;
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // height: 100vh;
+        width: 50%;
+        position: relative;
+        min-height: 800px;
+
+        .reveal3 {
+          visibility: hidden;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          max-width: 550px;
+          min-height: 700px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform-origin: left;
+          }
+        }
+      }
+      .content3 {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+    }
+  }
+}
+
+@media (min-width: 1550px) and (max-width: 1750px) {
+  .about_FullBox {
+    .about_nameFullBox {
+      font-size: 28rem;
+    }
+    ul {
+      li:nth-of-type(2) {
+        font-size: 22.5rem;
+      }
+    }
+  }
+}
+@media (min-width: 1350px) and (max-width: 1549px) {
+  .about_FullBox {
+    .about_nameFullBox {
+      font-size: 24rem;
+    }
+    ul {
+      li:nth-of-type(2) {
+        font-size: 19.5rem;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1349px) {
+  .about_FullBox {
+    .about_nameFullBox {
+      font-size: 19rem;
+    }
+    ul {
+      li:nth-of-type(2) {
+        font-size: 14.5rem;
+      }
+    }
+    .about_scrollTextBox,
+    .about_scrollTextBox2 {
+      p {
+        font-size: 8rem;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .about_FullBox {
+    margin-top: 100px;
+    .about_nameFullBox {
+      font-size: 14rem;
+      height: 60vh;
+    }
+    ul {
+      li:nth-of-type(2) {
+        font-size: 10.5rem;
+      }
+    }
+    .about_scrollTextBox {
+      transform: translateY(0%);
+    }
+    .about_scrollTextBox,
+    .about_scrollTextBox2 {
+      p {
+        font-size: 6rem;
+      }
+    }
+  }
+  .Introduce_FullBox {
+    .Introduce_ContentBox {
+      .Introduce_textBox {
+        .Introduce_rightTextBox {
+          width: 40%;
+        }
+        .Introduce_rightTextBox {
+          width: 60%;
+          div {
+            min-width: 500px;
+          }
+        }
+      }
+      .Introduce_Section {
+        align-items: center;
+        margin-bottom: 250px;
+
+        &:last-child {
+          margin-bottom: 0;
+          align-items: flex-start !important;
+        }
+      }
+
+      .Section2 {
+        align-items: center !important;
+      }
+      .Section3 {
+        .container {
+          min-height: 500px;
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .about_FullBox {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    .about_scrollBoxWap {
+      overflow: visible;
+      display: block;
+      .about_scrollBox {
+        div {
+          align-items: center;
+          p:nth-of-type(1) {
+            font-size: 7rem;
+            width: 400px;
+            font-weight: 600;
+          }
+          &:nth-of-type(3) {
+            // display: none;
+          }
+        }
+      }
+    }
+    .about_nameFullBox {
+      font-size: 10rem;
+      height: 30vh;
+    }
+    ul {
+      li:nth-of-type(2) {
+        font-size: 5.5rem;
+        font-weight: 800;
+      }
+    }
+    .about_scrollTextBox {
+      transform: translateY(0%);
+    }
+    .about_scrollTextBox,
+    .about_scrollTextBox2 {
+      p {
+        font-size: 4rem;
+      }
+    }
+  }
+  .Introduce_FullBox {
+    .Introduce_ContentBox {
+      .Introduce_textBox {
+        flex-direction: column;
+        .Introduce_leftTextBox {
+          width: 100%;
+          margin-bottom: 80px;
+          & > p {
+            font-size: 3rem;
+            margin-bottom: 30px;
+          }
+        }
+        .Introduce_rightTextBox {
+          width: 100%;
+          & > p {
+            font-size: 3rem;
+            margin-bottom: 30px;
+          }
+          div {
+            min-width: 300px;
+          }
+        }
+      }
+
+      .Introduce_Section {
+        align-items: flex-start;
+        margin-bottom: 150px;
+        flex-direction: column;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .container {
+        width: 100%;
+        margin-bottom: 30px;
+        .reveal {
+          width: 90%;
+        }
+      }
+      .Section2 {
+        align-items: center !important;
+        .section2_imgWrap {
+          min-height: 400px;
+          order: 1;
+          width: 100%;
+        }
+        .container {
+          width: 80%;
+          height: 50%;
+          right: 10%;
+          min-height: 250px;
+        }
+        .container2 {
+          height: 20%;
+          bottom: 20%;
+          left: 0;
+          min-height: 120px;
+        }
+        .content2 {
+          width: 90%;
+        }
+      }
+      .Section3 {
+        align-items: center;
+        .container {
+          min-height: 400px;
+          width: 90%;
+          .reveal3 {
+            min-height: 200px;
+            img {
+              height: 50%;
+            }
+          }
+        }
+        .content3 {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+.skill_FullBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  color: #302f2f;
+}
+.skill_FullBox .skill_TitleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1600px;
+  color: #302f2f;
+  margin-bottom: 200px;
+  font-weight: 500;
+}
+.skill_FullBox .skill_TitleBox p {
+  width: 100%;
+  font-size: 13rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -4px;
+}
+.skill_FullBox .skill_TitleBox p span {
+  font-style: italic;
+  transform: translateX(-20px);
+  display: inline-block;
+}
+.skill_FullBox .skill_TitleBox .skill_Title1 {
+  width: 100%;
+  transform: translateX(-300px);
+  opacity: 0;
+}
+.skill_FullBox .skill_TitleBox .skill_Title1 p {
+  text-align: left;
+}
+.skill_FullBox .skill_TitleBox .skill_Title2 {
+  width: 100%;
+  transform: translateX(200px);
+  opacity: 0;
+}
+.skill_FullBox .skill_TitleBox .skill_Title2 p {
+  text-align: right;
+}
+.skill_FullBox .skill_ContentBox {
+  width: 90%;
+  min-height: 100vh;
+  max-width: 1600px;
+  padding-bottom: 300px;
+}
+.skill_FullBox .skill_ContentBox .skill_SubTitleBox {
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  transform: translateY(30px);
+  opacity: 0;
+  margin-bottom: 80px;
+}
+.skill_FullBox .skill_ContentBox .skill_SubTitleBox p:nth-of-type(1) {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+.skill_FullBox .skill_ContentBox .skill_SubTitleBox p:nth-of-type(2), .skill_FullBox .skill_ContentBox .skill_SubTitleBox p:nth-of-type(3) {
+  color: #83817e;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  background-color: rgb(243, 243, 243);
+  transition: 0.1s;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv {
+  background-color: rgb(255, 255, 255);
+  height: 280px;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.5s ease-out;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_NumberBox {
+  width: 10%;
+  font-size: 3rem;
+  color: #9a9a9a;
+  transform: translateY(5px);
+  transition: 0.5s;
+  margin-left: 10px;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox > div:first-child {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox > div:first-child p {
+  font-size: 13.5rem;
+  font-family: "Inter", sans-serif;
+  text-shadow: -1.2px -1.2px 0 rgb(112, 112, 112), 1.2px -1.2px 0 rgb(112, 112, 112), -1.2px 1.2px 0 rgb(112, 112, 112), 1.2px 1.2px 0 rgb(112, 112, 112);
+  color: white;
+  position: absolute;
+  transition: 0.5s;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox > div:first-child p:nth-of-type(2) {
+  transform: translate(-7px, 7px);
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox > div:first-child p:nth-of-type(3) {
+  transform: translate(-14px, 14px);
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox .skill_des_textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px;
+  text-align: left;
+  transition: transform 0.5s;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox .skill_des_textBox p {
+  font-family: "Noto Sans KR";
+  transition: 0.5s;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox .skill_des_textBox p:nth-of-type(1) {
+  transform: translateY(10px);
+  font-size: 1.6rem;
+  color: #575757;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox .skill_des_textBox p:not(:first-child) {
+  transform: translateY(15px);
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv:hover .skill_alphaBox div:nth-of-type(1) p:nth-of-type(2) {
+  transform: translate(-1px, -1px);
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv:hover .skill_alphaBox div:nth-of-type(1) p:nth-of-type(3) {
+  transform: translate(-2px, -2px);
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv:hover .skill_des_textBox p:nth-of-type(1) {
+  transform: translateY(0);
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv:hover .skill_des_textBox p:not(:first-child) {
+  transform: translateY(0);
+}
+.skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv:hover .skill_NumberBox {
+  transform: translateY(0px);
+}
+.skill_FullBox .skill_ContentBox .skillBox1 {
+  opacity: 0;
+}
+.skill_FullBox .skill_ContentBox .skillBox1 .skill_Section_FullDiv {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+.skill_FullBox .skill_ContentBox .skillBox2 {
+  opacity: 0;
+}
+.skill_FullBox .skill_ContentBox .skillBox2 .skill_Section_FullDiv {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+.skill_FullBox .skill_ContentBox hr {
+  margin: 200px 0;
+  height: 2px;
+  background-color: rgb(191, 191, 191);
+  border: none;
+  width: 0px;
+  opacity: 0;
+}
+.skill_FullBox .skill_ContentBox .subTitle2 {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skill_FullBox .skill_TitleBox p {
+    font-size: 9rem;
+  }
+  .skill_FullBox .skill_TitleBox p span {
+    transform: translateX(-14px);
+  }
+}
+@media (max-width: 767px) {
+  .skill_FullBox .skill_TitleBox p {
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
+  .skill_FullBox .skill_TitleBox p span {
+    transform: translateX(-3px);
+  }
+  .skill_FullBox .skill_ContentBox {
+    padding-bottom: 0;
+  }
+  .skill_FullBox .skill_ContentBox .skill_SubTitleBox p:nth-of-type(1) {
+    font-size: 2.5rem;
+  }
+  .skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv {
+    height: 200px;
+  }
+  .skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_NumberBox {
+    font-size: 2.5rem;
+  }
+  .skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox {
+    width: 85%;
+  }
+  .skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox div:first-child {
+    width: 35%;
+  }
+  .skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox div:first-child p {
+    font-size: 10rem;
+  }
+  .skill_FullBox .skill_ContentBox .skill_Section1 .skill_Section_FullDiv .skill_alphaBox .skill_des_textBox {
+    height: 100%;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=skill.css.map */
